@@ -12,4 +12,7 @@ describe "scrabble_score" do
   it "return 1 for a " do
     expect(scrabble_score('a')).to eq 1
   end
+  it "return 4 for 'f' " do
+    expect(scrabble_score('f')).to eq 4
+  end
 end
