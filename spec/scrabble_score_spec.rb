@@ -6,4 +6,7 @@ describe "scrabble_score" do
   it "return 0 for whitespace " do
     expect(scrabble_score(" \t\n")).to eq 0
   end
+  it "return 0 for nil " do
+    expect(scrabble_score(nil)).to eq 0
+  end
 end

@@ -1,6 +1,6 @@
 def scrabble_score(word)
   case word
-  when "", / \t\n/
+  when "", / \t\n/, nil
     0
   else
     1
