@@ -1,3 +1,8 @@
 def scrabble_score(word)
-  0
+  case word
+  when "", / \t\n/
+    0
+  else
+    1
+  end
 end
