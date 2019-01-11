@@ -21,4 +21,7 @@ describe "scrabble_score" do
   it "return 22 for 'quirky' (complicated word)" do
     expect(scrabble_score('quirky')).to eq 22
   end
+  it "return 41 for 'OXYPHENBUTAZONE' (case insenitive)" do
+    expect(scrabble_score('OXYPHENBUTAZONE')).to eq 41
+  end
 end

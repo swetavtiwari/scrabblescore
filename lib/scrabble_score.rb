@@ -5,7 +5,7 @@ def scrabble_score(word)
   when "", nil
     0
   else
-    word.each_char do |letter|
+    word.downcase.each_char do |letter|
       case letter
       when / \t\n/
         0
