@@ -15,7 +15,10 @@ describe "scrabble_score" do
   it "return 4 for 'f' " do
     expect(scrabble_score('f')).to eq 4
   end
-  it "return 6 for 'street'" do
-    expect(scrabble_score("street")).to eq 6
+  it "return 6 for 'street' (simple word)" do
+    expect(scrabble_score('street')).to eq 6
+  end
+  it "return 22 for 'quirky' (complicated word)" do
+    expect(scrabble_score('quirky')).to eq 22
   end
 end
